@@ -1,54 +1,73 @@
 # Micro_IIT_Internship_NoorySaba_Sentiment_Analysis-
 
 
-# Sentiment Analysis on IMDb Movies 🎬
+# 🎬 Sentiment Analysis on IMDb Top 1000 Movies
 
-This project analyzes the **sentiment** of movie overviews from IMDb’s Top 1000 Movies.  
-It uses **machine learning** and **text processing** to classify each overview as:
+This project performs sentiment analysis on movie overviews from the IMDb Top 1000 dataset using machine learning models and natural language processing (NLP).
 
-- 👍 Positive  
-- 👎 Negative  
-- 😐 Neutral  
+---
 
-## 📁 Files
+## 📊 Project Objective
 
-- `main.py` – Main Python script for sentiment analysis  
-- `imdb_top_1000.csv` – Dataset with movie details
+To classify each movie overview as:
+- 👍 **Positive**
+- 👎 **Negative**
+- 😐 **Neutral**
 
-## 🛠 Tools Used
+Sentiments are automatically labeled using **TextBlob** polarity scores, and various models are trained to predict these sentiments.
 
-- Python
-- pandas, numpy, scikit-learn
-- TextBlob (for sentiment labeling)
-- CountVectorizer & TF-IDF
-- WordCloud for visualizations
+---
 
-## Steps
+## 📁 Files Included
 
-1. Clean and prepare the movie overview text
-2. Label sentiment using TextBlob
-3. Train models like:
-   - Logistic Regression
-   - Naive Bayes
-   - SVM
-4. Show results and word clouds
+- `main.py` – Python script for preprocessing, training, evaluation, and visualization.
+- `imdb_top_1000.csv` – Dataset containing IMDb movie details including overviews.
 
+---
+
+## 🛠️ Tools & Libraries Used
+
+- **Python** 🐍  
+- **TextBlob** – for sentiment labeling  
+- **Scikit-learn** – for ML models  
+- **NLTK** – for tokenizing, stopwords, and stemming  
+- **BeautifulSoup** – for HTML cleanup  
+- **WordCloud** – to visualize word distributions  
+- **CountVectorizer & TfidfVectorizer** – for feature extraction  
+
+---
+
+## 🔄 Process Flow
+
+1. **Load Dataset**  
+2. **Clean Text**  
+   - Remove HTML tags  
+   - Remove special characters  
+   - Apply stemming  
+   - Remove stopwords  
+3. **Sentiment Labeling** with TextBlob  
+4. **Vectorization**  
+   - CountVectorizer  
+   - TF-IDF  
+5. **Train & Evaluate Models**
+   - Logistic Regression  
+   - Linear SVM  
+   - Multinomial Naive Bayes  
+6. **Generate Word Clouds** for each sentiment
+
+---
+
+## ▶️ How to Run
+
+Make sure you have the required packages installed.
 
 ## 📌 Requirements
-
 Make sure you have the following Python libraries installed:
 
-```bash
 pip install numpy pandas seaborn matplotlib scikit-learn textblob nltk wordcloud beautifulsoup4
 
-
-## ▶️ Run the Project
-
 ```bash
+pip install -r requirements.txt
 python main.py
 
-Output
-Accuracy for each model
-
-Word clouds for Positive, Negative, and Neutral reviews
 
