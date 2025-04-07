@@ -33,16 +33,6 @@ It uses **machine learning** and **text processing** to classify each overview a
    - SVM
 4. Show results and word clouds
 
-## ▶️ Run the Project
-
-```bash
-python main.py
-
-###Output
-Accuracy for each model
-
-Word clouds for Positive, Negative, Neutral reviews
-
 
 ## 📌 Requirements
 
@@ -50,3 +40,15 @@ Make sure you have the following Python libraries installed:
 
 ```bash
 pip install numpy pandas seaborn matplotlib scikit-learn textblob nltk wordcloud beautifulsoup4
+
+
+## ▶️ Run the Project
+
+```bash
+python main.py
+
+Output
+Accuracy for each model
+
+Word clouds for Positive, Negative, and Neutral reviews
+
