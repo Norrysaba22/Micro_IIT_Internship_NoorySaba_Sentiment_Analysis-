@@ -35,10 +35,10 @@ It uses **machine learning** and **text processing** to classify each overview a
 
 ## ▶️ Run the Project
 
-##bash
+```bash
 python main.py
 
-Output
+###Output
 Accuracy for each model
 
 Word clouds for Positive, Negative, Neutral reviews
